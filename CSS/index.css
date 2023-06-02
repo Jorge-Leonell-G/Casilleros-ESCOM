@@ -1,0 +1,585 @@
+:root{
+    --negro: black;
+    --blanco: white;
+
+    /*Paleta de Colores*/
+    --gris: #735a72;
+    --celeste: #75D2F4;
+    --azulito: #BDE4F2;
+    --obscuro: #376373;
+    --grisazul: #96B5C0;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--blanco);
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Menú*/
+
+#header{
+    position: relative;
+    width: 100%;
+}
+
+.logo{
+    height: 40px;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .icono-cabeza{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.menu .icono-cabeza h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--negro);
+}
+
+.menu .list-container{
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+.menu .list-container .lists{
+    display: flex;
+    
+}
+
+.menu .list-container .lists li{
+    list-style: none;
+}
+
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--negro);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu .list-container .lists li a.activo{
+    background: var(--obscuro);
+    color: var(--blanco);
+}
+
+.menu .list-container .lists li a:hover{
+    background: var(--obscuro);
+    color: var(--blanco);
+}
+
+.span-menu > .fa-bars{
+    display: none;
+}
+
+/*Fondos de las páginas*/
+
+.fondotesis{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url(../IMG/tesis.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondoalumnos{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url(../IMG/estudiantes.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondodocentes{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url(../IMG/docentes.jpg );
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondoproyectos{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url(../IMG/proyectos.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondopublicaciones{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url(../IMG/publicaciones.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondomision{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url(../IMG/misionyvision.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondocontactos{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background: url(../IMG/contactanos.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*header imagenes*/
+
+.img-cabeza{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.descripcion{
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.356);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.descripcion h1{
+    font-size: 50px;
+    color: var(--blanco);
+    font-weight: 200;
+}
+
+.descripcion hr{
+    width: 400px;
+    height: 2px;
+    background: var(--blanco);
+    border: none;
+    margin-top: 5px;
+}
+
+.descripcion p{
+    font-size: 20px;
+    color: var(--blanco);
+    margin-top: 20px;
+}
+
+.descripcion > button{
+    width: 170px;
+    height: 40px;
+    background: var(--obscuro);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.descripcion > button:hover{
+    background: var(--gris);
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1c;
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+@media (max-width:780px){
+    .toggle-button{
+        display: flex;
+    }
+    .list-container{
+        display: none;
+        width: 100%;
+        background: white;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .menu{
+        flex-direction: column;
+        
+    }
+    .list-container ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .list-container li{
+        text-align: center;
+    }
+    .list-container li a{
+        padding: 0.5rem 0.5rem;
+    }
+   
+    
+    .menu .list-container .lists{
+        display: flex;
+        
+    }
+    
+    .menu .list-container .lists li{
+        list-style: none;
+        
+    }
+    
+    .menu .list-container .lists li a{
+        text-decoration: none;
+        
+        margin: 0px 10px;
+        padding: 8px;
+        color: rgb(0, 0, 0);
+        border-radius: 24px;
+        font-size: 16px;
+        transition: 0.3s;
+        width: 50%;
+    }
+    
+    .menu .list-container .lists li a.activo{
+        background: var(--obscuro);
+        color: rgb(255, 255, 255);
+    }
+    
+    .menu .list-container .lists li a:hover{
+        background: var(--obscuro);
+        color: rgb(255, 255, 255);
+    }
+    
+    .list-container.active{
+        display: flex;
+    }
+}
+
+/*footer*/
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #376373;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 35%;
+   padding: 0 1rem;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ffffff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.map{
+    width: 100%;
+    height: 15rem;
+}
+
+/*Tarjetas para información*/
+.grid {
+    display: grid;
+    width: 100%;
+    padding: 12%;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: start;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-img {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 3rem;
+  }
+  
+  .card-header {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .card-btn {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--obscuro);
+    background-color: #96B5C0;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+  }
+  
+  .card-btn a{
+    text-decoration: none;
+    color: var(--obscuro);
+    }
+  
+  .card-btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+  }
+  
+  .card-btn:hover,
+  .card-btn:active {
+    background-color: #6c94a3;
+  }
+  
+  .card-btn:hover span,
+  .card-btn:active span {
+    margin-left: 1.5rem;
+  }
+  
+  @media only screen and (max-width: 60em) {
+  
+    .grid {
+      grid-gap: 3rem;
+    }
+  }
+
+
+/*Grid para las paginas*/
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding-top: 4rem;
+    justify-content: stretch;
+    padding-bottom: 4rem;
+}  
+.c2{
+    text-align: justify;
+}
+.c2_info{
+    text-align: center;
+}
+
+/*Grid de tarjetas de personas*/
+
+.grid-personas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.persona1{
+    text-align: center;
+    grid-column: 1/3;
+    padding: 2rem;
+}
+.persona1 img{
+    height: 20rem;
+    padding-bottom: 1rem;
+}
+
+.persona{
+    text-align: center;
+    padding: 2rem;
+}
+.persona img{
+    height: 12rem;
+    padding-bottom: 1rem;
+}
+
+h1, h2{
+    font-weight: bold;
+}
+
+.grado{
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*Estilos extras*/
+
+.linea i{
+    color: var(--obscuro);
+}
