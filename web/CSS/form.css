@@ -1,0 +1,43 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 8/06/2023, 10:24:54 PM
+    Author     : crock
+*/
+
+:root{
+    --bluef: rgba(0,85,128,1);
+    --bluec: rgba(0,152,228,1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #444444;
+}
+
+body{
+
+    font-size: 16px;
+
+}
+
+#invalido h4{
+    font-weight: 100;
+}
+    
+#nombre{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 15px;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 15px;
+}
