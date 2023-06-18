@@ -16,7 +16,7 @@
     <body>
         <div class="cuerpoFormulario" id="cuerpoFormulario">
             <span class="borderLine"></span>
-            <form class="formularioLogin" id="formularioLogin" action="http://localhost:8080/Sesiones/InicioSesion" method="POST">
+            <form class="formularioLogin" id="formularioLogin" action="InicioSesion" method="POST">
                 <h1>Inicio de Sesión</h1>
                 <div class="inputBox">
                     <input type="text" class="txt" id="txtUsuario" required="required" name="txtUsuario">
@@ -31,6 +31,7 @@
                 </div>
                 <div class="links">
                     <a href="#">¿Olvidó la contraseña?</a>
+                    <a href="identificar.jsp">¿Cuenta con un perfil de admin?</a>
                 </div>
                 <input type="submit" value="Iniciar Sesion" class="btn">
                 <input type="button" value="Borrar Datos" class="btn" onclick="resetearFormularioLogin()">

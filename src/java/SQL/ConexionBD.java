@@ -16,25 +16,21 @@ import java.sql.SQLException;
  */
 public class ConexionBD {
     
-    private static String url = "jdbc:mysql://127.0.0.1:3306/bd_login"; //127.0.0.1 = localhost
-    private static String usuario = "root";
-    private static String contrasena = "root";
+    Connection con;
+    public ConexionBD(){
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/registro","root","Shellframex731--");            
+        } catch (Exception e) {
+            System.err.println("Error"+e);
+        }
+    }
+    public Connection getConnection(){
+        return con;
+    }
     
 //    private static Connection conexion;
 //    private static PreparedStatement sentenciaPreparada;
 //    private static ResultSet resultado;
-    
-    public static Connection conectar(){
-        Connection conexion = null;
-        
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            conexion = DriverManager.getConnection(url,usuario,contrasena);
-        } catch (ClassNotFoundException | SQLException e) {
-            System.out.println("Error: " + e);
-        }
-        
-        return conexion;
-    }
     
 }
