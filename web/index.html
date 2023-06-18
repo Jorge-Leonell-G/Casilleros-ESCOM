@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Casilleros | ESCOM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/estilosIndex.css" type="text/css" media="all">
@@ -74,11 +74,12 @@ and open the template in the editor.
                         <li>Tener alimentos o bebidas por algún tipo de derramamiento. </li>
                         <li>Almacenar cualquier tipo de productos para comercialización. </li>
                     </ul>
-    
+                    En caso de contar con uno de los casilleros, puedes iniciar sesión en el botón correspondiente en la página web exclusiva.
                 </h4>
             </div>
             <div class="container" id="boton">
                 <a class="btn btn-lg" href="solicitud.jsp" role="button" id="forms">SOLICITUD DE CASILLERO</a>
+                <a class="btn btn-lg" href="login.jsp" role="button" id="forms" onclick="cargarLogin()">INICIA SESIÓN</a>
             </div>
             <div class="container" id="contenido">
                 <h2>¿Cómo sé que existen casilleros disponibles?</h2>
@@ -89,27 +90,12 @@ and open the template in the editor.
                 <br>
                 <br>
                 <h4>Conoce el estado de los casilleros haciendo clic en la imagen siguiente:</h4>
-                <img src="./img/croquis.jpg" alt="">
                 <br>
                 <div class="container" id="boton">
-                    <a class="btn btn-lg" href="casilleros.html" role="button" id="forms">Provisional</a>
+                    <a href="disponibilidad.jsp"><img src="./img/croquis.jpg" id="croquis" class="croquis" alt="Croquis de casilleros de la ESCOM"></a>
                 </div>
-                <br>
-                <nav class="menu" id="menu">
-                    <ul>
-                        <li><a href="login.jsp" onclick="cargarLogin()" >Iniciar Sesión</a></li>
-                       <!-- <li><a href="altaUsuario.jsp" onclick="cargarAltaUsuario()" >Registro de Usuarios</a></li> -->
-                    </ul>
-                </nav>
             </div>
         </div>
-        <!--
-    
-            <img src="/IMG/logoESCOM2x.png" alt="Logotipo de ESCOM" class="imgescom">
-    <ul class="container" id="lista">
-                    <li><a href=""></a></li>
-                </ul>
-        -->
     
         <footer>
             <div class="container" id="patas">

@@ -3,11 +3,28 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/Servlets/Controlador.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/vistas/formadmin.jsp</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/SQL/ConexionBD.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/vistas/formBan.jsp</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/CSS/base.css</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/paginaInicio.jsp</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/index.html</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/Interfaces/CRUD.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/vistas/agregar.jsp</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/mensaje.jsp</file>
             <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/login.jsp</file>
-            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/error.jsp</file>
             <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/Servlets/InicioSesion.java</file>
-            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/Servlets/CerrarSesion.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/admin.jsp</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/vistas/listar.jsp</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/Servlets/srvUsuario.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/SQL/usuario.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/DAO/PersonaDAO.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/vistas/editar.jsp</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/disponibilidad.jsp</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/SQL/Persona.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/src/java/SQL/Recuperacion.java</file>
+            <file>file:/C:/Users/leone/OneDrive/Documentos/NetBeansProjects/Sesiones/web/identificar.jsp</file>
         </group>
     </open-files>
 </project-private>

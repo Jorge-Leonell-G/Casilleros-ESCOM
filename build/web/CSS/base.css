@@ -55,31 +55,26 @@ body{
     font-weight: bold;
 }
 
+.croquis{
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: auto;
+    cursor: pointer;
+}
+
 /*Botón pa llevar a la solicitud*/
 
 #boton{
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     padding-top: 25px;
+    
 }
 
 #forms{
     background-color: var(--bluec);
     color: #fff;
     font-family: 'Lato', sans-serif;
-}
-
-/*------------------------casilleros disponibilidad------------------------*/
-
-.tabladis{
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 20px;
-    text-align: center;
-    border: 3px solid var(--bluef);
-}
-
-.columna:nth-child(odd) {
-    
 }

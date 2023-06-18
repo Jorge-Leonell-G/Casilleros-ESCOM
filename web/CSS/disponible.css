@@ -1,0 +1,40 @@
+:root{
+    --bluef: rgba(0,85,128,1);
+    --bluec: rgba(0,152,228,1);
+}
+
+.tabladis{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid var(--bluef);
+}
+
+th{
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .6rem;
+    border: solid var(--bluef);
+    background-color: #d9eef8;
+}
+
+td{
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid var(--bluef);
+    background-color: #f3fbff;
+}
+
+.casilleros{
+    display: grid;
+    grid-template-columns: 50% 50%;   
+    grid-gap: 20px;
+}
+
+.IMGC{
+    display: block;
+    margin: auto;
+    width: 550px;
+    height: auto;
+}
