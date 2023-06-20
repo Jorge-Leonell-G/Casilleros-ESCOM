@@ -5,8 +5,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Inicie sesión aquí | Casilleros ESCOM</title>
-        <link rel="stylesheet" href="CSS/estilosLogin.css" type="text/css" media="all">
-        <link rel="stylesheet" href="CSS/styleLogin.css">
+        <link rel="stylesheet" href="./CSS/estilosLogin.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./CSS/styleLogin.css">
         <%
             response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); //Borrar directivas de memoria cache y anular algoritmos predeterminados para almacenar cache 
             response.setHeader("Pragma", "no-cache");//Directivas compatibles con memorias cache 
@@ -40,7 +40,6 @@
                     
                 </div>
                 <div class="links">
-                    <a href="notificaciones.jsp">Quiero recibir notificaciones</a>
                     <a id="indexito" href="index.html">Página principal</a>
                 </div>
             </form>

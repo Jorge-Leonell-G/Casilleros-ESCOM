@@ -8,6 +8,10 @@
         <servlet-name>srvUsuario</servlet-name>
         <servlet-class>Servlets.srvUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SesionAdmin</servlet-name>
+        <servlet-class>Servlets.SesionAdmin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Controlador</servlet-name>
         <url-pattern>/Controlador</url-pattern>
@@ -15,5 +19,9 @@
     <servlet-mapping>
         <servlet-name>srvUsuario</servlet-name>
         <url-pattern>/srvUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SesionAdmin</servlet-name>
+        <url-pattern>/SesionAdmin</url-pattern>
     </servlet-mapping>
 </web-app>

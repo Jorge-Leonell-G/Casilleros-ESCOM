@@ -13,7 +13,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sistema | Iniciar Session</title>
+  <title>Sistema | Iniciar Sesión</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -38,7 +38,7 @@
   <div class="login-box-body">
     <p class="login-box-msg">Iniciar Sesión</p>
 
-    <form action="srvUsuario?accion=verificar" method="POST">
+    <form action="SesionAdmin" method="POST">
       <div class="form-group has-feedback">
           <input type="text" name="txtUsu" id="txtUsu" value="" class="form-control"  placeholder="Usuario">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -70,7 +70,7 @@
     </div>
     <!-- /.social-auth-links -->
 
-    <a href="#">Olvide mi contraseña</a><br>
+    <a href="#">Olvidé mi contraseña</a><br>
 
   </div>
   <!-- /.login-box-body -->

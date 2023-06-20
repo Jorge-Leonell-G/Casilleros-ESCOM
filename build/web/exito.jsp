@@ -63,6 +63,9 @@
                         <br>
                         <br> 
                         Estado:
+                        <br>
+                        <br>
+                        <a href="notificaciones.jsp">Quiero recibir notificaciones</a>
                     </div>
 
                 </div>

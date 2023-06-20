@@ -81,12 +81,13 @@ public class srvUsuario extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        /*
         try {
             verificar(request, response);
         } catch (Exception ex) {
             Logger.getLogger(srvUsuario.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+        */
     }
 
     /**

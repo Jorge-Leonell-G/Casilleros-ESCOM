@@ -164,7 +164,7 @@
     <footer>
         <div class="container" id="patas">
             <div class="">
-                <img src="./IMG/logoSEP.png" alt="">
+                <img src="./img/logoSEP.png" alt="">
                 <h4>www.gob.mx/SEP/</h4>
             </div>
             <div class="">
