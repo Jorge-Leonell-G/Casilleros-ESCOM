@@ -6,6 +6,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%
+    if(session.getAttribute("usuario") != null){
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -69,7 +72,7 @@
 
             <div class="item3">
 
-                <div class="titulo">¡Bienvenido, user!</div>
+                <div class="titulo">¡Bienvenido, ${usuario.nombreUsuario}!</div>
                 <div class="bienvenida">
                     Estás dentro de la página oficial de casilleros de ESCOM. Aquí podrás obtener información sobre tu casillero, avisos importante, y reportes
                      hechos hacia ti. Recuerda que esta cuenta es exclusiva para ti y compartirla puede perjudicar su uso. 
@@ -137,3 +140,8 @@
         
     </body>
 </html>
+<%
+}else{
+response.sendRedirect("login.jsp");
+} 
+%>

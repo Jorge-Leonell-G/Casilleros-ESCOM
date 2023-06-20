@@ -1,8 +1,15 @@
+:root{
+    --bluef: rgba(0,85,128,1);
+    --bluec: rgba(0,152,228,1);
+}
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    font-family: 'Lato', sans-serif;
 }
 
 body{
@@ -10,7 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #161623;
+    background-color: #CCC;
     overflow: hidden;
 }
 
@@ -18,22 +25,23 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #000; /* Fondo oscuro */
+    background-color: #fff; /* Fondo oscuro */
   }
   
   .content {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px; /* Ajusta el padding según sea necesario */
+    padding: 50px; /* Ajusta el padding según sea necesario */
   }
 
   .content p {
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 900;
     font-size: 24px;
-    color: #fff; /* Color de texto blanco */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
-    font-family: "Arial", sans-serif; /* Tipo de fuente */
+    color: #000; /* Color de texto blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto */
   }
 
 .circle{
@@ -96,12 +104,12 @@ body{
 {
     margin: 10px 0;
     font-size: 0.95em;
-    color: #8f8f8f;
+    color: #181717;
     text-decoration: none;
 }
 
 .links a:hover,
 .links a:nth-child(2)
 {
-    color:#fff;
+    color:#ff2323;
 }

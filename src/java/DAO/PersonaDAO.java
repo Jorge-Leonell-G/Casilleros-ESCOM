@@ -29,7 +29,7 @@ public class PersonaDAO implements CRUD{
         ArrayList<Persona>list=new ArrayList<>();
         String sql="select * from persona";
         try {
-            con=cn.getConnection();
+            con=cn.conectar();
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             while(rs.next()){
@@ -48,7 +48,7 @@ public class PersonaDAO implements CRUD{
     public Persona list(int id) {
         String sql="select * from persona where Id="+id;
         try {
-            con=cn.getConnection();
+            con=cn.conectar();
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             while(rs.next()){                
@@ -66,7 +66,7 @@ public class PersonaDAO implements CRUD{
     public boolean add(Persona per) {
        String sql="insert into persona(DNI, Nombres)values('"+per.getDni()+"','"+per.getNom()+"')";
         try {
-            con=cn.getConnection();
+            con=cn.conectar();
             ps=con.prepareStatement(sql);
             ps.executeUpdate();
         } catch (Exception e) {
@@ -78,7 +78,7 @@ public class PersonaDAO implements CRUD{
     public boolean edit(Persona per) {
         String sql="update persona set DNI='"+per.getDni()+"',Nombres='"+per.getNom()+"'where Id="+per.getId();
         try {
-            con=cn.getConnection();
+            con=cn.conectar();
             ps=con.prepareStatement(sql);
             ps.executeUpdate();
         } catch (Exception e) {
@@ -90,7 +90,7 @@ public class PersonaDAO implements CRUD{
     public boolean eliminar(int id) {
         String sql="delete from persona where Id="+id;
         try {
-            con=cn.getConnection();
+            con=cn.conectar();
             ps=con.prepareStatement(sql);
             ps.executeUpdate();
         } catch (Exception e) {

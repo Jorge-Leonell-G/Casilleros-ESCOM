@@ -4,6 +4,7 @@
  */
 package Servlets;
 
+import SQL.usuarioSesion;
 import com.mysql.jdbc.Driver;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,6 +15,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 
@@ -78,6 +80,10 @@ public class InicioSesion extends HttpServlet {
             throws ServletException, IOException {
         
         try{
+            HttpSession sesion;
+            usuarioSesion usuario;
+            usuario = this.obtenerUsuario(request);
+            
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sesion?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","Shellframex731--");
             
@@ -92,6 +98,8 @@ public class InicioSesion extends HttpServlet {
             ResultSet rs = pst.executeQuery();         
             
             if(rs.next()){
+                sesion = request.getSession();
+                sesion.setAttribute("usuario", usuario);
                 response.sendRedirect("exito.jsp");
             }else{
                 response.sendRedirect("error.jsp");
@@ -112,5 +120,13 @@ public class InicioSesion extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    private usuarioSesion obtenerUsuario(HttpServletRequest request) {
+        usuarioSesion u = new usuarioSesion();
+        u.setNombreUsuario(request.getParameter("txtUsuario"));
+        u.setClave(request.getParameter("txtContrasena"));
+        
+        return u;
+    }
 
 }
