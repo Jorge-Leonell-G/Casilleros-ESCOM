@@ -79,7 +79,7 @@ public class InicioSesion extends HttpServlet {
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Casilleros","root","Shellframex731--");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/sesion?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","Shellframex731--");
             
             String user = request.getParameter("txtUsuario");
             String pass = request.getParameter("txtContrasena");

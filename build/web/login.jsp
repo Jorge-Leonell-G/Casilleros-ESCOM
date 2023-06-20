@@ -19,13 +19,13 @@
             <form class="formularioLogin" id="formularioLogin" action="InicioSesion" method="POST">
                 <h1>Inicio de Sesión</h1>
                 <div class="inputBox">
-                    <input type="text" class="txt" id="txtUsuario" required="required" name="txtUsuario">
+                    <input type="text" class="txt" autocomplete="off" id="txtUsuario" required="required" name="txtUsuario">
                     <span>Usuario</span>
                     <i></i>
                 </div>
 
                 <div class="inputBox">
-                    <input type="password" class="txt" id="txtContrasena" required="required" name="txtContrasena">
+                    <input type="password" class="txt" autocomplete="off" id="txtContrasena" required="required" name="txtContrasena">
                     <span>Contraseña</span>
                     <i></i>
                 </div>
@@ -33,8 +33,12 @@
                     <a href="#">¿Olvidó la contraseña?</a>
                     <a href="identificar.jsp">¿Cuenta con un perfil de admin?</a>
                 </div>
-                <input type="submit" value="Iniciar Sesion" class="btn">
-                <input type="button" value="Borrar Datos" class="btn" onclick="resetearFormularioLogin()">
+                <div class="botoneslogin">
+                    
+                    <input type="submit" value="Iniciar Sesion" class="btn">
+                    <input type="button" value="Borrar Datos" class="btn" onclick="resetearFormularioLogin()">
+                    
+                </div>
                 <div class="links">
                     <a href="notificaciones.jsp">Quiero recibir notificaciones</a>
                     <a id="indexito" href="index.html">Página principal</a>

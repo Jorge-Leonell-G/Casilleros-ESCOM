@@ -26,7 +26,7 @@
             <img src="./img/logoESCOM2x.png" alt="Logotipo de ESCOM" class="imgescom">
             <nav class="container" >
                 <ul class="container" id="lista">
-                    <li><a href="">INICIO</a></li>
+                    <li><a href="index.html">INICIO</a></li>
                     <li><a href="">CONÓCENOS</a></li>
                     <li><a href="">OFERTA EDUCATIVA</a></li>
                     <li><a href="">ESCOMUNIDAD</a></li>
@@ -55,10 +55,10 @@
             <div class="casilleros">
 
             <div>
-                <img src="./IMG/Casilleros 2-1.jpg" alt="" class="IMGC">
-                <img src="./IMG/Casilleros 4-3.jpg" alt="" class="IMGC">
-                <img src="./IMG/Casilleros 6-5.jpg" alt="" class="IMGC">
-                <img src="./IMG/Casilleros 7.jpg" alt="" class="IMGC">
+                <img src="./img/Casilleros 2-1.jpeg" alt="" class="IMGC">
+                <img src="./img/Casilleros 4-3.jpeg" alt="" class="IMGC">
+                <img src="./img/Casilleros 6-5.jpeg" alt="" class="IMGC">
+                <img src="./img/Casilleros 7.jpeg" alt="" class="IMGC">
             </div>
     
             <table class="tabladis">

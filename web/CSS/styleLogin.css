@@ -18,6 +18,13 @@ body
     background: #23242a;
 }
 
+
+.cuerpoFormulario h1{
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+}
+
 .cuerpoFormulario
 {
     position: relative;
@@ -130,6 +137,8 @@ body
     letter-spacing: 0.1em;
 }
 
+
+
 .cuerpoFormulario form .inputBox
 {
     position: relative;
@@ -141,7 +150,7 @@ body
 {
     position: relative;
     width: 100%;
-    padding: 20px 10px 10px;
+    padding: 25px 10px 10px;
     background: transparent;
     outline: none;
     border: none;
@@ -170,7 +179,7 @@ body
 {
     color: #fff;
     font-size: 0.75em;
-    transform: translateY(-34px);
+    transform: translateY(-45px);
 }
 
 .cuerpoFormulario form .inputBox i
@@ -189,19 +198,19 @@ body
 .cuerpoFormulario form .inputBox input:valid ~ i,
 .cuerpoFormulario form .inputBox input:focus ~ i
 {
-    height: 44px;
+    height: 55px;
 }
 
 .cuerpoFormulario form .links
 {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .cuerpoFormulario form .links a
 {
     margin: 10px 0;
-    font-size: 0.55em;
+    font-size: 0.45em;
     color: #8f8f8f;
     text-decoration: none;
 }
@@ -216,14 +225,14 @@ body
 {
     border: none;
     outline: none;
-    padding: 9px 25px;
+    padding: 9px 0px;
     background: #fff;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 0.7em;
     border-radius: 4px;
     font-weight: 600;
     width: 180px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .cuerpoFormulario form input[type="button"]
@@ -233,11 +242,11 @@ body
     padding: 9px 25px;
     background: #fff;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 0.7em;
     border-radius: 4px;
     font-weight: 600;
     width: 180px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .cuerpoFormulario form input[type="submit"]:active

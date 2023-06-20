@@ -8,7 +8,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 //import java.sql.PreparedStatement;
 //import java.sql.ResultSet;
-import java.sql.SQLException;
 
 /**
  *
@@ -16,17 +15,19 @@ import java.sql.SQLException;
  */
 public class ConexionBD {
     
-    Connection con;
-    public ConexionBD(){
-        try {
+    private final String servidor = "jdbc:mysql://localhost/sesion?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    private final String usuario = "root";
+    private final String clave = "Shellframex731--";
+    
+    public Connection conectar(){
+        Connection cn = null;
+        try{
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/registro","root","Shellframex731--");            
-        } catch (Exception e) {
-            System.err.println("Error"+e);
+            cn = DriverManager.getConnection(servidor, usuario, clave);
+        }catch(Exception e){
+            System.out.println("Error al conectar " + e.getMessage());
         }
-    }
-    public Connection getConnection(){
-        return con;
+        return cn;
     }
     
 //    private static Connection conexion;
