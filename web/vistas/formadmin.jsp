@@ -1,22 +1,14 @@
-<%-- 
-    Document   : formadmin
-    Created on : 17 jun 2023, 21:20:31
-    Author     : leone
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%--
+<!-- comment -->
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
---%>
 <%
-    if(session.getAttribute("usuario") != null){
+    if (session.getAttribute("usuario") != null) {
 %>
-
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sistema de verificación | Inicio</title>
+        <title>Sistema de Verificación | Inicio</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -44,7 +36,7 @@
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <span class="logo-mini"><b>S</b>BL</span>
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><b>Sistema </b>Consultas</span>
+                    <span class="logo-lg"><b>Sistema </b>Plataforma</span>
                 </a>
 
                 <!-- Header Navbar -->
@@ -63,7 +55,7 @@
                                     <!-- The user image in the navbar-->
                                     <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                    <span class="hidden-xs">${usuario.nombreUsuario}</span>
+                                    <span class="hidden-xs"> ${usuario.nombreUsuario}</span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <!-- The user image in the menu -->
@@ -71,14 +63,13 @@
                                         <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                                         <p>                    
-                                            Bienvenido - ${usuario.nombreUsuario} 
-                                            <small>Usted es, ${usuario.rol.nombreRol}</small>
+                                            Bienvenido - ${usuario.nombreUsuario}
                                         </p>
                                     </li>
                                     <!-- Menu Footer-->
                                     <li class="user-footer">
                                         <div class="pull-right">
-                                            <a href="srvUsuario?accion=cerrar" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                                            <a href="srvUsuario?accion=cerrar" class="btn btn-default btn-flat">Cerrar Session</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -99,7 +90,7 @@
                             <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                         </div>
                         <div class="pull-left info">
-                            <p>Bienvenido, ${usuario.nombreUsuario} </p>
+                            <p>Bienvenido,  ${usuario.nombreUsuario} </p>
                             <!-- Status -->
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
@@ -123,14 +114,38 @@
                         <!-- Optionally, you can add icons to the links -->
                         <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Panel Administrativo</span></a></li>
                         <li class="treeview">
-                            <a href="#"><i class="fa fa-cart-arrow-down"></i> <span>Reportes</span>
+                            <a href="#"><i class="glyphicon glyphicon-th-large"></i> <span>Registros</span>
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-cart-arrow-down"></i>Nueva Reporte</a></li>
-                                <li><a href="#"><i class="fa fa-tags"></i>Administrar Reportes</a></li>
+                                <li><a href="#"><i class="fa fa-archive"></i>Categorias</a></li>
+                                <li><a href="#"><i class="fa fa-tags"></i>Marcas</a></li>
+                                <li><a href="#"><i class="fa fa-cube"></i>Productos</a></li>
+                                <li><a href="#"><i class="fa fa-users"></i>Clientes</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#"><i class="fa fa-cart-arrow-down"></i> <span>Ventas</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="#"><i class="fa fa-cart-arrow-down"></i>Nueva Venta</a></li>
+                                <li><a href="#"><i class="fa fa-tags"></i>Administrar Ventas</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#"><i class="fa fa-area-chart"></i> <span>Reportes</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="#"><i class="fa fa-bar-chart"></i>Reportes Ventas</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -162,7 +177,7 @@
                                 <div class="inner">
                                     <h3>150</h3>
 
-                                    <p>Nuevos Reportes</p>
+                                    <p>Nuevos Clientes</p>
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-bag"></i>
@@ -250,8 +265,8 @@
              user experience. -->
     </body>
 </html>
-<%
-}else{
-response.sendRedirect("identificar.jsp");
-} 
+<%        
+    } else {
+        response.sendRedirect("identificar.jsp");
+    }
 %>

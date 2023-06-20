@@ -72,37 +72,37 @@
                 <tr>
                     <td>Casillero 001</td>
                     <td>En uso</td>
-                    <td><a class="btn btn-danger" href="" role="button" id="reportar">Reportar</a></td>
+                    <td><a class="btn btn-danger" href="reportes.jsp" role="button" id="reportar">Reportar</a></td>
                 </tr>
 
                 <tr>
                     <td>Casillero 002</td>
                     <td>Disponible</td>
-                    <td><a class="btn btn-danger" href="" role="button" id="reportar">Reportar</a></td>
+                    <td><a class="btn btn-danger" href="reportes.jsp" role="button" id="reportar">Reportar</a></td>
                 </tr>
 
                 <tr>
                     <td>Casillero 003</td>
                     <td>En espera</td>
-                    <td><a class="btn btn-danger" href="" role="button" id="reportar">Reportar</a></td>
+                    <td><a class="btn btn-danger" href="reportes.jsp" role="button" id="reportar">Reportar</a></td>
                 </tr>
 
                 <tr>
                     <td>Casillero 004</td>
                     <td>En uso</td>
-                    <td><a class="btn btn-danger" href="" role="button" id="reportar">Reportar</a></td>
+                    <td><a class="btn btn-danger" href="reportes.jsp" role="button" id="reportar">Reportar</a></td>
                 </tr>
 
                 <tr>
                     <td>Casillero 005</td>
                     <td>Disponible</td>
-                    <td><a class="btn btn-danger" href="" role="button" id="reportar">Reportar</a></td>
+                    <td><a class="btn btn-danger" href="reportes.jsp" role="button" id="reportar">Reportar</a></td>
                 </tr>
 
                 <tr>
                     <td>Casillero 006</td>
                     <td>En espera</td>
-                    <td><a class="btn btn-danger" href="" role="button" id="reportar">Reportar</a></td>
+                    <td><a class="btn btn-danger" href="reportes.jsp" role="button" id="reportar">Reportar</a></td>
                 </tr>
 
             </table>
@@ -117,7 +117,7 @@
     <footer>
         <div class="container" id="patas">
             <div class="">
-                <img src="./IMG/logoSEP.png" alt="">
+                <img src="./img/logoSEP.png" alt="">
                 <h4>www.gob.mx/SEP/</h4>
             </div>
             <div class="">
