@@ -6,7 +6,7 @@ package Servlets;
 
 import com.mysql.jdbc.Driver;
 import java.sql.Connection;
-import com.mysql.jdbc.PreparedStatement;
+import java.sql.PreparedStatement;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -79,21 +79,17 @@ public class InicioSesion extends HttpServlet {
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/sesion?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","Shellframex731--");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sesion?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","Shellframex731--");
             
             String user = request.getParameter("txtUsuario");
             String pass = request.getParameter("txtContrasena");
             
-            response.setContentType("text/html;charset=UTF-8");
-            try(PrintWriter out = response.getWriter()){
-                out.println("Nombre del usuario: " + user);
-            }
+            PreparedStatement pst = con.prepareStatement("SELECT * FROM login WHERE user=? AND pass=?");
             
-            PreparedStatement pst = (PreparedStatement) con.prepareStatement("SELECT * FROM login WHERE user=? AND pass=?");
-            pst.setString(1, pass);
-            pst.setString(2, user);
+            pst.setString(1, user);
+            pst.setString(2, pass);
             
-            ResultSet rs = pst.executeQuery();
+            ResultSet rs = pst.executeQuery();         
             
             if(rs.next()){
                 response.sendRedirect("exito.jsp");
@@ -104,7 +100,7 @@ public class InicioSesion extends HttpServlet {
         }catch(Exception e){
             System.out.println(e);
         }
-        processRequest(request, response);
+        //processRequest(request, response);
     }
 
     /**
